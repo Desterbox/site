@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Foldit:wght@500;600&family=Lobster&family=Rubik+Glitch&display=swap");
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 920px) {
+  .container {
+    max-width: 880px;
+  }
+}
+@media (max-width: 880px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*---------------------------*/
+.wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.content {
+  padding: 50px 50px 50px 100px;
+  color: rgb(245, 253, 19);
+  border: 1px solid #e13f0e;
+  text-shadow: 2px 2px 0 #000;
+  background-color: grey;
+  border-radius: 30px;
+  box-shadow: 0px 4px 0px #e13f0e;
+}
+.content:hover .content__circle {
+  background: url(./image/hudozhnik-Vasya-Lozhkin_9.jpg) 50%/cover no-repeat;
+  transition-duration: 2s;
+  color: #fff;
+}
+.content__circle {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  font-size: 40px;
+  text-align: center;
+  border: 3px solid #e13f0e;
+  border-radius: 30%;
+  background: url(./image/весна.jpg) 50%/cover no-repeat;
+  transition-duration: 2s;
+  position: relative;
+  margin: 0 0 20px 0;
+  left: 0;
+  animation-name: white-circle;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0;
+}
+.content__pank {
+  font-size: 30px;
+  text-align: center;
+}
+.content__pank span {
+  text-decoration: line-through;
+  text-decoration-color: #ed2b2b;
+  font-size: 50px;
+  text-shadow: none;
+}
+
+@keyframes white-circle {
+  0% {
+    left: 0;
+  }
+  50% {
+    border-radius: 50%;
+  }
+  100% {
+    left: 700px;
+  }
+}
